@@ -1,0 +1,2 @@
+# bulletinmonitor
+Közlönyfigyelő / Bulletin Monitor
