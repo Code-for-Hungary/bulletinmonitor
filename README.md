@@ -27,9 +27,11 @@ https://magyarkozlony.hu/
 1. Scraper
 
 első körben a Magyar Közlöny
+
 2. Feliratkozás
 
 moduláris felépítés, többfajta scraperből érkező adatokkal is össze lehessen kapcsolni 
+
 3. Értesítés küldése
 
  
