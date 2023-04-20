@@ -10,19 +10,22 @@ https://magyarkozlony.hu/
 
 - Van, amikor naponta frissül, van, hogy több is megjelenik egy nap, néha kimarad 3-4 nap.
 
-Prioritás funkciók:
+## Prioritás funkciók:
 - felhasználók feliratkoznak kulcsszavakra, kifejezésekre (ez lehet akár egy már elfogadott törvénynek a száma is - ha éppen valamit módosítanak, és arról kell infó), és amikor felkerül egy közlöny, ami ilyen kulcsszót, kifejezést, jogszabályt tartalmaz, kap az illető egy értesítő emailt.
 - leiratkozás
 - Mivel pdf-ekről van szó, valószínűleg az lenne a legkényelmesebb, ha egyből elküldené a rendszer azt a bekezdést / bekezdéseket, amiben szerepel a kifejezés. Ha mondjuk 3-nál többször szerepel, akkor az egész rendelet / határozat is mehetne és persze link a pdf-hez.
 - Szótövezést kéne alkalmazni, hogy a ragozások, stb ne zavarjanak be.
 
-Hasznos funkciók:
+## Hasznos funkciók:
 - ha minden közlöny tartalomjegyzékére is fel lehetne irakozni, jogi geekeknek. Ez is sok könnyítés ahhoz képest, hogy fel kell menni mindig a közlöny honlapra, csekkolni, hogy van-e új és megnyitni a pdf-et.
 - Jó lenne kideríteni, hogy mikor kerülnek fel a közlönyök, ha van konkrét napszak, akkor arra időzítve a scrapelést, amúgy mondjuk 1-2 óránként csekkolni.
 - Az emailben lehetne egy link a közlöny eredeti honlapján lévő keresőre, ha valaki korábbi tartalmakra kíváncsi.
 - Közlönyön túl további eseményekre is lehetne modulokat építeni: Bírósági határozatok, Ügyészség, NAV, Rendőrség anonimizált határozatok, Társadalmi egyeztetésre bocsátott doksik (kormany.hu), OGY-nek benyújtott irományok (pl. tv.javaslat)
 
-Felépítés
+## Felépítés
+1. Scraper
+2. Feliratkozás
+3. Értesítés küldése
 
 
 
