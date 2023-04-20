@@ -25,9 +25,11 @@ https://magyarkozlony.hu/
 
 ## Felépítés
 1. Scraper
- első körben a Magyar Közlöny
+
+első körben a Magyar Közlöny
 2. Feliratkozás
- moduláris felépítés, többfajta scraperből érkező adatokkal is össze lehessen kapcsolni 
+
+moduláris felépítés, többfajta scraperből érkező adatokkal is össze lehessen kapcsolni 
 3. Értesítés küldése
 
  
