@@ -15,6 +15,7 @@ https://magyarkozlony.hu/
 - leiratkozás
 - Mivel pdf-ekről van szó, valószínűleg az lenne a legkényelmesebb, ha egyből elküldené a rendszer azt a bekezdést / bekezdéseket, amiben szerepel a kifejezés. Ha mondjuk 3-nál többször szerepel, akkor az egész rendelet / határozat is mehetne és persze link a pdf-hez.
 - Szótövezést kéne alkalmazni, hogy a ragozások, stb ne zavarjanak be.
+- GDPR kompatibilitás (adatkezelésit kell írni)
 
 ## Hasznos funkciók:
 - ha minden közlöny tartalomjegyzékére is fel lehetne irakozni, jogi geekeknek. Ez is sok könnyítés ahhoz képest, hogy fel kell menni mindig a közlöny honlapra, csekkolni, hogy van-e új és megnyitni a pdf-et.
@@ -24,8 +25,12 @@ https://magyarkozlony.hu/
 
 ## Felépítés
 1. Scraper
+ - első körben a Magyar Közlöny
 2. Feliratkozás
+ - moduláris felépítés, többfajta scraperből érkező adatokkal is össze lehessen kapcsolni 
 3. Értesítés küldése
-
-
-
+ - 
+ 
+## Kérdések
+- Hogyan kapcsolja össze a scraperből érkező adatokat az értesítésekkel?
+- Milyen kulcsszavakra lehet feliratkozni? Szabadszavas? Szótövezés beépítése? Előre meghatározott?
