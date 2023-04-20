@@ -20,5 +20,9 @@ Hasznos funkciók:
 - ha minden közlöny tartalomjegyzékére is fel lehetne irakozni, jogi geekeknek. Ez is sok könnyítés ahhoz képest, hogy fel kell menni mindig a közlöny honlapra, csekkolni, hogy van-e új és megnyitni a pdf-et.
 - Jó lenne kideríteni, hogy mikor kerülnek fel a közlönyök, ha van konkrét napszak, akkor arra időzítve a scrapelést, amúgy mondjuk 1-2 óránként csekkolni.
 - Az emailben lehetne egy link a közlöny eredeti honlapján lévő keresőre, ha valaki korábbi tartalmakra kíváncsi.
+- Közlönyön túl további eseményekre is lehetne modulokat építeni: Bírósági határozatok, Ügyészség, NAV, Rendőrség anonimizált határozatok, Társadalmi egyeztetésre bocsátott doksik (kormany.hu), OGY-nek benyújtott irományok (pl. tv.javaslat)
+
+Felépítés
+
 
 
