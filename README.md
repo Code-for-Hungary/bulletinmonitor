@@ -32,23 +32,31 @@ Bármilyen program lehet, bármit csinálhat, pl. Közlöny scrape, https://onli
 Feladata a felíratkozások/leíratkozások kezelése, események fogadása a scraperektől és a felíratkozók értesítése. A backend API-t ad a feladataihoz. A felíratkozáshoz különálló frontendet kell fejleszteni.
 
 ## Műveletek, folyamatok
-1. Feliratkozás "esemény"re: kiválasztható az esemény fajtája (ezek az ismert esemény generáló programok) és megadhatók paraméterek, egyelőre szöveg pl. pontosvesszővel elválasztva (igazából a scrapertől függ)
+1. _Feliratkozás "esemény"re:_ kiválasztható az esemény fajtája (ezek az ismert esemény generáló programok) és megadhatók paraméterek, egyelőre szöveg pl. pontosvesszővel elválasztva (igazából a scrapertől függ)
 
-2. Értesítés küldése: a scraper (esemény generáló) API-n keresztül elkéri a neki szánt paramétereket, lefut velük és ha történt esemény, akkor API-n keresztül szól róla a Monitornak, aki értesíti a feliratkozókat.
+2. _Értesítés küldése:_ a scraper (esemény generáló) API-n keresztül elkéri a neki szánt paramétereket, lefut velük és ha történt esemény, akkor API-n keresztül szól róla a Monitornak, aki értesíti a feliratkozókat.
 
-3. Leíratkozás: a Monitor által küldött levében van leíratkozó link, azzal megoldható.
+3. _Leiratkozás:_ a Monitor által küldött levében van leíratkozó link, azzal megoldható.
 
 ## Kérdések
-- Hogyan kapcsolja össze a scraperből érkező adatokat az értesítésekkel?
+- _Hogyan kapcsolja össze a scraperből érkező adatokat az értesítésekkel?_
+
 HTTP API-n keresztül
 
-- Milyen kulcsszavakra lehet feliratkozni? Szabadszavas? Szótövezés beépítése? Előre meghatározott?
-Felíratkozáskor a Monitor szempontjából szabad szöveg adható meg, ami tartalmazhat az adott Scraper által hozott szabályokat (pl. kulcsszavak legyenek pontosvesszővel elválasztva)
+- _Milyen kulcsszavakra lehet feliratkozni? Szabadszavas? Szótövezés beépítése? Előre meghatározott?_
 
-- Nagyságrendileg hány felíratkozásra számítunk?
+Feliratkozáskor a Monitor szempontjából szabad szöveg adható meg, ami tartalmazhat az adott Scraper által hozott szabályokat (pl. kulcsszavak legyenek pontosvesszővel elválasztva)
 
-- Nagyságrendileg hány értesítő emailt kell kiküldenünk mondjuk Közlöny scraper eseményre mondjuk havonta?
+- _Nagyságrendileg hány felíratkozásra számítunk?_
 
-- Hogyan küldjük ki az értesítő emaileket?
+Kezdetben 5-150. Igényfelmérő kérdőívet 20-an töltötték ki.
+
+- _Nagyságrendileg hány értesítő emailt kell kiküldenünk mondjuk Közlöny scraper eseményre mondjuk?_
+
+Naponta 0-200. Egy felhasználó akár több kulcsszóra is feliratkozhat, viszont simán előfordulhat, hogy hetekig, hónapokig nem jön olyan tartalom, ami releváns lenne.
+
+- _Hogyan küldjük ki az értesítő emaileket?_
 1. valami gmail vagy általunk hostolt email accountból
 2. nagyobb mennyiség esetén pl. mailgun vagy hasonló szolgáltatással
+
+- _Létezik-e más (külföldi) hasonló alkalmazás?_
