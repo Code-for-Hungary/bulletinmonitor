@@ -29,7 +29,7 @@ https://magyarkozlony.hu/
 Bármilyen program lehet, bármit csinálhat, pl. Közlöny scrape, https://onlineszamla.nav.gov.hu/informatikai_valtozasok scrape stb. A Monitorral HTTP API-n keresztül tud kommunikálni. Az, hogy mit, hogyan, hol, mikor, milyen időközönként csinál, teljesen a saját dolga. Függetlenül, önállóan működik. Technikailag bárki bármilyen esemény generálót írhat, ha az szabványosan kommunikál a Monitorral.
 
 ### Monitor
-Feladata a felíratkozások/leíratkozások kezelése, események fogadása a scraperektől és a felíratkozók értesítése. A backend API-t ad a feladataihoz. A felíratkozáshoz különálló frontendet kell fejleszteni.
+Feladata a feliratkozások/leíratkozások kezelése, események fogadása a scraperektől és a feliratkozók értesítése. A backend API-t ad a feladataihoz. A feliratkozáshoz különálló frontendet kell fejleszteni.
 
 ## Műveletek, folyamatok
 1. _Feliratkozás "esemény"re:_ kiválasztható az esemény fajtája (ezek az ismert esemény generáló programok) és megadhatók paraméterek, egyelőre szöveg pl. pontosvesszővel elválasztva (igazából a scrapertől függ)
@@ -47,7 +47,7 @@ HTTP API-n keresztül
 
 Feliratkozáskor a Monitor szempontjából szabad szöveg adható meg, ami tartalmazhat az adott Scraper által hozott szabályokat (pl. kulcsszavak legyenek pontosvesszővel elválasztva)
 
-- _Nagyságrendileg hány felíratkozásra számítunk?_
+- _Nagyságrendileg hány feliratkozásra számítunk?_
 
 Kezdetben 5-150. Igényfelmérő kérdőívet 20-an töltötték ki.
 
