@@ -31,6 +31,10 @@ Bármilyen program lehet, bármit csinálhat, pl. Közlöny scrape, https://onli
 ### Monitor
 Feladata a feliratkozások/leíratkozások kezelése, események fogadása a scraperektől és a feliratkozók értesítése. A backend API-t ad a feladataihoz. A feliratkozáshoz különálló frontendet kell fejleszteni.
 
+### Köztes réteg
+Felmerült, hogy kellene egy köztes réteg a scraper és a monitor között annak érdekében, hogy egyszerűbb dolga legyen az előbbinek. A scraper csak ütemezve ránéz az általa figyelt tartalomra, és ha változás van, akkor a tartalmat elküldi a köztes rétegnek (legyen egyszerű, elég bonyodalma lesz a PDF-ek feldolgozásával). Ha tartalmat találna, akkor azt átküldené a köztes rétegnek, és az kérné le a monitortól, hogy milyen kulcsszavakat keressen, ha van találat, akkor a meghatározott formában és tartalommal visszaadná a monitornak, ami azt kiküldené a megfelelő emailre.
+
+
 ## Műveletek, folyamatok
 1. _Feliratkozás "esemény"re:_ kiválasztható az esemény fajtája (ezek az ismert esemény generáló programok) és megadhatók paraméterek, egyelőre szöveg pl. pontosvesszővel elválasztva (igazából a scrapertől függ)
 
