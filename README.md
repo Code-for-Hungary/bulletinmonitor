@@ -64,3 +64,11 @@ Naponta 0-200. Egy felhasználó akár több kulcsszóra is feliratkozhat, viszo
 2. nagyobb mennyiség esetén pl. mailgun vagy hasonló szolgáltatással
 
 - _Létezik-e más (külföldi) hasonló alkalmazás?_
+
+
+## Architecture/resources
+Monitor backend: https://github.com/Code-for-Hungary/bmm-backend
+Monitor frontend: https://github.com/Code-for-Hungary/bmm-frontend
+Protoscraper: https://github.com/Code-for-Hungary/bmm-protoscraper
+
+
