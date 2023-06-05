@@ -68,11 +68,18 @@ Naponta 0-200. Egy felhasználó akár több kulcsszóra is feliratkozhat, viszo
 
 ## Architecture/resources
 GH Monitor backend: https://github.com/Code-for-Hungary/bmm-backend
+
 GH Monitor frontend: https://github.com/Code-for-Hungary/bmm-frontend
+
 Monitor frontend: http://bmmfrontend.billy.hu/
+
 GH Protoscraper: https://github.com/Code-for-Hungary/bmm-protoscraper
+
 Endpoint #1 (bulletin): http://bmmbackend.billy.hu/api/events/bygenerator/994966da-4cd6-420a-9597-ded3dfb85fc1
-Endpoint #2 (protoscraper): http://bmmbackend.billy.hu/api/events/bygenerator/994966da-53ea-4797-a01d-7926c0b8053d 
+
+Endpoint #2 (protoscraper): http://bmmbackend.billy.hu/api/events/bygenerator/994966da-53ea-4797-a01d-7926c0b8053d
+
+
 
 Bulletin scraper: https://github.com/zolizoli/bulletinMonotorScraper (needs sync with bmm API)
 
