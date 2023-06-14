@@ -10,6 +10,12 @@ https://magyarkozlony.hu/
 
 - Van, amikor naponta frissül, van, hogy több is megjelenik egy nap, néha kimarad 3-4 nap.
 
+## Figyelésre érdemes oldalak:
+- Közbeszerzési értesítő: https://www.kozbeszerzes.hu/ertesito/ letölthető pdf nagyjából minden hétköznap
+- Magyar közlöny: https://magyarkozlony.hu/ pdf
+- Anonimizált bírósági határozatok: https://eakta.birosag.hu/anonimizalt-hatarozatok docx, lehet évre szűrni és év szerint csökkenő/növekvő sorrendbe rendezni; a lista JSON-ban érkezik [repo](https://github.com/Code-for-Hungary/casescraper)
+- MNV szerződések: https://mnv.hu/gazdalkodas/kozbeszerzesek/szerzodeskereso JSON, van benne dátum, lehet lapozni
+
 ## Prioritás funkciók:
 - felhasználók feliratkoznak "esemény"ekre, amiket paramétereznek kulcsszavakkal, kifejezésekkel (ez lehet akár egy már elfogadott törvénynek a száma is - ha éppen valamit módosítanak, és arról kell infó)
 - amikor felkerül egy közlöny, ami ilyen kulcsszót, kifejezést, jogszabályt tartalmaz, kap az illető egy értesítő emailt.
