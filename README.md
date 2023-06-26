@@ -33,18 +33,17 @@ https://magyarkozlony.hu/
 ## Felépítés
 ### Scraper/esemény generáló
 Bármilyen program lehet, bármit csinálhat, pl. Közlöny scrape, https://onlineszamla.nav.gov.hu/informatikai_valtozasok scrape stb. A Monitorral HTTP API-n keresztül tud kommunikálni. Az, hogy mit, hogyan, hol, mikor, milyen időközönként csinál, teljesen a saját dolga. Függetlenül, önállóan működik. Technikailag bárki bármilyen esemény generálót írhat, ha az szabványosan kommunikál a Monitorral.
+Keresést alapvetően nem kell végeznie, azt a monitor végzi.
 
 ### Monitor
-Feladata a feliratkozások/leíratkozások kezelése, események fogadása a scraperektől és a feliratkozók értesítése. A backend API-t ad a feladataihoz. A feliratkozáshoz különálló frontendet kell fejleszteni.
-
-### Köztes réteg
-Felmerült, hogy kellene egy köztes réteg a scraper és a monitor között annak érdekében, hogy egyszerűbb dolga legyen az előbbinek. A scraper csak ütemezve ránéz az általa figyelt tartalomra, és ha változás van, akkor a tartalmat elküldi a köztes rétegnek (legyen egyszerű, elég bonyodalma lesz a PDF-ek feldolgozásával). Ha tartalmat találna, akkor azt átküldené a köztes rétegnek, és az kérné le a monitortól, hogy milyen kulcsszavakat keressen, ha van találat, akkor a meghatározott formában és tartalommal visszaadná a monitornak, ami azt kiküldené a megfelelő emailre.
-
+Feladata a feliratkozások/leíratkozások kezelése, események/adatok fogadása a scraperektől, keresés az adatokban és a feliratkozók értesítése. A backend API-t ad a feladataihoz.
 
 ## Műveletek, folyamatok
 1. _Feliratkozás "esemény"re:_ kiválasztható az esemény fajtája (ezek az ismert esemény generáló programok) és megadhatók paraméterek, egyelőre szöveg pl. pontosvesszővel elválasztva (igazából a scrapertől függ)
 
-2. _Értesítés küldése:_ a scraper (esemény generáló) API-n keresztül elkéri a neki szánt paramétereket, lefut velük és ha történt esemény, akkor API-n keresztül szól róla a Monitornak, aki értesíti a feliratkozókat.
+2.a. _Értesítés küldése:_ a Scraper (esemény generáló) API-n keresztül elkéri a neki szánt paramétereket, lefut velük és ha történt esemény, akkor API-n keresztül szól róla a Monitornak, aki értesíti a feliratkozókat.
+
+2.b. _Új adat feltöltése a monitorba:_ a Scraper új adatot talált, szöveges formára alakítja és beküldi a Monitornak. A Monitor az új tartalomban keresi a felíratkozott kulcsszavakat és találat esetén értesíti a felíratkozókat.
 
 3. _Leiratkozás:_ a Monitor által küldött levében van leíratkozó link, azzal megoldható.
 
