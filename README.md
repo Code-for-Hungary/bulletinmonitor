@@ -1,3 +1,9 @@
+Ebben a repóban nem folyik fejlesztés. A konkrét project itt található: https://github.com/Code-for-Hungary/bmm-frontend
+
+
+
+
+
 # Közlönyfigyelő / Bulletin Monitor
 
 Már többször felmerült, hogy fejlesszünk egy eszközt, ami rendszeresen, vagy legalább minden reggel automatikusan átfutja a közlönyt és kulcsszavak, törvények száma alapján küld egy üzenetet, ha van benne releváns tartalom. Ez sokat segít civil szervezeteknek abban, hogy időben tudjanak reagálni frissen megjelent, sokszor még nem hatályos jogszabályokra.
